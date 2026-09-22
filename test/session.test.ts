@@ -61,9 +61,8 @@ test("x402Fetch accepts a raw LocalAccount", async () => {
  * header — base64(JSON.stringify(paymentRequired)), exactly what
  * @x402/core's encodePaymentRequiredHeader does (confirmed by reading its
  * source; not re-exported publicly, so replicated here rather than
- * imported) — so the test exercises the exact wire format HoodGrow's own
- * endpoints use (see @/lib/x402.ts's own 402 demo in the main app), not a
- * v1 JSON-body shortcut.
+ * imported) — so the test exercises the exact wire format standard x402
+ * endpoints use, not a v1 JSON-body shortcut.
  */
 function paymentRequiredResponse(amountAtomic: string, asset?: string): Response {
   const paymentRequired = {
