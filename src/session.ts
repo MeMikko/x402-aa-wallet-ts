@@ -195,6 +195,7 @@ export function x402Fetch(
         : wallet;
 
   const client = new x402Client().register(options?.network ?? NETWORK, new ExactEvmScheme(account));
+  client.setSpendControls(false);
   // The asset-verification policy is ALWAYS on unless the caller both sets
   // no cap and explicitly opts into unknown assets. With a cap set,
   // allowUnknownAssets is deliberately ignored: an asset with unverified
