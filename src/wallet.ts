@@ -24,8 +24,7 @@ import type { LocalAccount } from "viem";
  * persists a private key anywhere. Key generation happens entirely inside
  * your own process via viem's `generatePrivateKey`; the private key is
  * returned to YOU and exists only in your process's memory unless you
- * choose to store it. This package (and HoodGrow, who sponsors it) have no visibility
- * into it, ever.
+ * choose to store it. This package has no visibility into it, ever.
  */
 
 export interface SpendWallet {
