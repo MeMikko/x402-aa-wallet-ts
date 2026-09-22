@@ -1,7 +1,7 @@
 {
   "name": "x402-aa-wallet",
   "version": "0.3.0",
-  "description": "Give an ERC-4337 / account-abstraction agent a dedicated, non-custodial EOA so it can pay x402 (HTTP 402) challenges against any x402 merchant \u2014 smart-wallet signatures don't yet settle on today's facilitators. Optional maxAmountUsd spend cap.",
+  "description": "Give an ERC-4337 / account-abstraction agent a dedicated, non-custodial EOA so it can pay x402 (HTTP 402) challenges against any x402 merchant — smart-wallet signatures don't yet settle on today's facilitators. Optional maxAmountUsd spend cap.",
   "type": "module",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -14,9 +14,6 @@
   "files": [
     "dist"
   ],
-  "engines": {
-    "node": ">=18"
-  },
   "scripts": {
     "build": "tsc -p tsconfig.json",
     "test": "tsx --test test/*.test.ts",
@@ -33,13 +30,8 @@
     "base",
     "wallet"
   ],
+  "author": "MeMikko",
   "license": "MIT",
-  "author": "HoodGrow (https://www.hoodgrow.com)",
-  "funding": {
-    "type": "individual",
-    "url": "https://www.hoodgrow.com/api-access"
-  },
-  "homepage": "https://github.com/MeMikko/x402-aa-wallet-ts#readme",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/MeMikko/x402-aa-wallet-ts.git"
@@ -47,15 +39,19 @@
   "bugs": {
     "url": "https://github.com/MeMikko/x402-aa-wallet-ts/issues"
   },
+  "homepage": "https://github.com/MeMikko/x402-aa-wallet-ts#readme",
   "dependencies": {
-    "@x402/core": "^2.20.0",
-    "@x402/evm": "^2.20.0",
-    "@x402/fetch": "^2.20.0",
-    "viem": "^2.55.10"
+    "@x402/core": "^2.26.0",
+    "@x402/evm": "^2.26.0",
+    "@x402/fetch": "^2.26.0",
+    "viem": "^2.56.8"
   },
   "devDependencies": {
     "@types/node": "^26.1.2",
     "tsx": "^4.23.1",
     "typescript": "^5"
+  },
+  "engines": {
+    "node": ">=18"
   }
 }
