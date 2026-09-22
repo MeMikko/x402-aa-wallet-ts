@@ -173,7 +173,7 @@ function paymentPolicy(options: { maxAmountUsd?: number; maxTotalUsd?: number })
 /**
  * A `fetch`-compatible function that transparently pays any HTTP 402 x402
  * challenge it hits, signing with `wallet` — works against ANY x402
- * "exact"-scheme merchant on Base mainnet, not just HoodGrow.
+ * "exact"-scheme merchant on Base mainnet.
  *
  * @param wallet a `SpendWallet` (from `createSpendWallet`), a raw viem
  *   `LocalAccount`, or a private key hex string. Every payment this makes
